@@ -1,11 +1,7 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
-
+export default function About() {
   return (
     <>
       <Head>
@@ -16,7 +12,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <h1 className="text-3xl font-bold underline">
-          Hello world!
+          About
         </h1>
       </main>
     </>

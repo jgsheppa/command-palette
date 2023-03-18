@@ -19,5 +19,9 @@ export function useCommandPalette() {
     };
   }, [setIsCommandPaletteOpen]);
 
-  return { isCommandPaletteOpen }
+  const handleClosePalette = () => {
+    setIsCommandPaletteOpen(false)
+  }
+
+  return { isCommandPaletteOpen, handleClosePalette }
 }
